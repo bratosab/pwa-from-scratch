@@ -55,3 +55,11 @@ const supported = ('contacts' in navigator && 'ContactsManager' in window)
 ```html
 <button id="contacts" type="button">Contacts</button>
 ```
+
+## Add device motion & geolocation
+1. Create device-motion.js file
+2. Code handleMotionEvent() and getLocation()
+...
+
+
+
