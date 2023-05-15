@@ -31,5 +31,21 @@
   "theme_color": "#000000",
   "background_color": "#ffffff",
   "display": "fullscreen",
-  "orientation": "portrait"
+  "orientation": "portrait",
+  "shortcuts": [
+    {
+      "name": "New chat",
+      "short_name": "Chat",
+      "description": "Start a new chat",
+      "url": "/chat?utm_source=homescreen",
+      "icons": [{ "src": "/icons/chat.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "My Notifications",
+      "short_name": "Notifications",
+      "description": "View recent notifications",
+      "url": "/notifications?utm_source=homescreen",
+      "icons": [{ "src": "/icons/notifications.png", "sizes": "192x192" }]
+    }
+  ]
 }
