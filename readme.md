@@ -32,3 +32,26 @@ npx pwa-asset-generator logo.png icons
   ]
 ```
 
+## Add contacts picker
+1. Create contact-picker.js file
+2. Specify the attributes we want access to in an array :
+```js
+const attributes = ['name', 'email', 'tel', 'icon']
+```
+3. Specify selection options, in this case multiple contacts selection :
+```js
+const options = {multiple: true}
+```
+4. Add check to know if ContactsManager is supported on device :
+```js
+const supported = ('contacts' in navigator && 'ContactsManager' in window)
+```
+5. Write an async function to get the contacts that will verify if the feature is supported then fetch the contacts. The feature only works on https.
+6. Import the contact-picker.js file in your `<head>` of the index.html file using a `defer` attribute : 
+```html
+<script defer src="./contact-picker.js"></script>
+```
+7. Add the contacts button in your `<body>` : 
+```html
+<button id="contacts" type="button">Contacts</button>
+```
