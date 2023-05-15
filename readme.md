@@ -61,5 +61,6 @@ const supported = ('contacts' in navigator && 'ContactsManager' in window)
 2. Code handleMotionEvent() and getLocation()
 ...
 
-
+## Add Idle detection
+1. Create idle-detect.js file
 
